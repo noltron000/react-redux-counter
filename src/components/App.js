@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { createStore } from 'redux'
 import { Provider } from 'react-redux'
-import { reducers } from '../reducers/index.jsx'
+import reducers from '../reducers/index.js'
 import './App.css';
 import Counter from './Counter'
 

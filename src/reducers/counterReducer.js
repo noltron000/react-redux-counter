@@ -1,6 +1,6 @@
-import { INCREMENT, DECREMENT } from '../actions/index.jsx'
+import { INCREMENT, DECREMENT } from '../actions/index.js'
 
-const counterReducer = (state, action) => {
+const counterReducer = (state = 0, action) => {
 	switch (action.type) {
 		case INCREMENT:
 			return state += 1;
