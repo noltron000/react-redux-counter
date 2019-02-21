@@ -1,11 +1,15 @@
-import { INCREMENT, DECREMENT } from '../actions/index.js'
+import { INCREMENT, DECREMENT, RESET } from '../actions/index.js'
 
-const counterReducer = (state = 0, action) => {
+const defaultState = 99
+
+const counterReducer = (state = defaultState, action) => {
 	switch (action.type) {
 		case INCREMENT:
 			return state += 1;
 		case DECREMENT:
 			return state -= 1;
+		case RESET:
+			return defaultState;
 		default:
 			return state;
 	}
